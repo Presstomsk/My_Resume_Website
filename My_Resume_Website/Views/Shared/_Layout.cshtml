@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>My Resume WebSite</title>
+    <link rel="stylesheet" href="~/css/site.css">
+
+</head>
+<body>
+    <header class="primary-header container group">
+        <h1 class="logo">
+            <a href="/ResumeWebsite/Main">My Resume<br>Website</a>
+        </h1>
+        <h3><br><br><br></h3>
+        <nav class="nav primary-nav">
+            <ul>
+                <li><a href="/ResumeWebsite/Main">Главная</a></li>
+                <!--
+                -->
+                <li><a href="/ResumeWebsite/About">Резюме</a></li>
+                <!--
+                -->
+                <li><a href="/ResumeWebsite/Projects">Проекты</a></li>
+                <!--
+                -->
+                <li><a href="/ResumeWebsite/Contacts">Мои контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        @RenderBody()
+    </section>
+
+    <footer class="primary-footer container group">
+        <small>&copy; Roman Permyakov</small>
+
+        <nav class="nav">
+            <ul>
+                
+                <li><a href="/ResumeWebsite/Main">Главная</a></li>
+                <!--
+                -->
+                <li><a href="/ResumeWebsite/About">Резюме</a></li>
+                <!--
+                -->
+                <li><a href="/ResumeWebsite/Projects">Проекты</a></li>
+                <!--
+                -->
+                <li><a href="/ResumeWebsite/Contacts">Контакты</a></li>
+            </ul>
+        </nav>
+
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+            
+       
+
+   
